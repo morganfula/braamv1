@@ -17,66 +17,73 @@
 
 <body>
 
-  <head>
-    <nav>
-      <div class="logo">
-        <h1 class="big-title">
-          braam!
-        </h1>
+  <main role="main" class="main-content">
+    <canvas id="noise" class="noise"></canvas>
+
+    <head>
+      <nav>
+        <div class="logo">
+          <h1 class="big-title">
+            braam!
+          </h1>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <h1>
+              <a href="#">about us</a>
+            </h1>
+          </li>
+          <li>
+            <h1>
+              <a href="#">add a tour</a>
+            </h1>
+          </li>
+          <li>
+            <h1>
+              <a href="#">languages</a>
+            </h1>
+          </li>
+          <li>
+            <h1>
+              <a href="#">sign in</a>
+            </h1>
+          </li>
+        </ul>
+      </nav>
+    </head>
+    <div class="intro">
+      <div class="section1">
+        <div class="title-intro">
+          <h3>Match Bests</h3>
+          <h3>Artists in the</h3>
+          <h3>world.</h3>
+        </div>
+        <div class="title-intro underline">
+        </div>
       </div>
-      <ul class="nav-links">
-        <li>
-          <h1>
-            <a href="#">about us</a>
-          </h1>
-        </li>
-        <li>
-          <h1>
-            <a href="#">add a tour</a>
-          </h1>
-        </li>
-        <li>
-          <h1>
-            <a href="#">languages</a>
-          </h1>
-        </li>
-        <li>
-          <h1>
-            <a href="#">sign in</a>
-          </h1>
-        </li>
-      </ul>
-    </nav>
-  </head>
-  <div class="section1">
-    <div class="title-intro">
-      <h3>Match Bests</h3>
-      <h3>Artists in the</h3>
-      <h3>world.</h3>
+      <div class="intro-img">
+        <img src="./assets/img/img-intro.jpg" alt="">
+      </div>
+      <div class="booking-list">
+        <div class="intro-btn perf-btn">
+          <h4>performance</h4>
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        <div class="intro-btn dates-btn">
+          <h4>select dates</h4>
+          <i class="fa fa-calendar"></i>
+        </div>
+        <div class="intro-btn artist-btn">
+          <h4>artists name</h4>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
     </div>
-    <div class="title-intro underline">
-    </div>
-  </div>
-  <div class="intro-img">
-    <img src="./assets/img/img-intro.jpg" alt="">
-  </div>
-  <div class="booking-list">
-    <div class="intro-btn perf-btn">
-      <h4>performance</h4>
-      <i class="fa fa-arrow-down"></i>
-    </div>
-    <div class="intro-btn dates-btn">
-      <h4>select dates</h4>
-      <i class="fa fa-calendar"></i>
-    </div>
-    <div class="intro-btn artist-btn">
-      <h4>artists name</h4>
-      <i class="fa fa-star"></i>
-    </div>
-  </div>
+    <div class="section2"></div>
 
 
-  <script src="app.js"></script>
+    <script src="noise.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

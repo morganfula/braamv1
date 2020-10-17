@@ -6,7 +6,7 @@ $black: #0f0f0f;
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 body,
@@ -15,7 +15,19 @@ html {
   background: $blue;
 }
 
+.noise {
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.02;
+}
+
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -52,6 +64,7 @@ nav {
   position: absolute;
   top: 15%;
   left: 15%;
+  height: 100vh;
   h3 {
     font-size: 6rem;
     font-weight: 300;
@@ -96,4 +109,19 @@ nav {
     position: absolute;
     top: 30%;
   }
+}
+
+.section2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  top: 100%;
+  left: 50%;
+  height: 80vh;
+  width: 95vw;
+  transform: translate(-50%, 0%);
+  z-index: -1;
+  border: solid 0.5rem $black;
 }

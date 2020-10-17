@@ -7,12 +7,12 @@ $black: #0f0f0f;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: $blue;
 }
 
 body,
 html {
   font-family: $font-family;
+  background: $blue;
 }
 
 nav {
@@ -72,5 +72,28 @@ nav {
     width: 600px;
     object-fit: cover;
     border: 0.5rem solid $black;
+  }
+}
+
+.booking-list {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  display: flex;
+  justify-content: space-around;
+  .intro-btn {
+    margin: 1rem;
+    width: 250px;
+    height: 48px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 0.3rem solid $black;
+  }
+  perf-btn {
+    position: absolute;
+    top: 30%;
   }
 }

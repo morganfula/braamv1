@@ -9,6 +9,10 @@
     rel="stylesheet">
   <title>Braam v1</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://use.fontawesome.com/cea2a029b8.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -56,11 +60,21 @@
   <div class="intro-img">
     <img src="./assets/img/img-intro.jpg" alt="">
   </div>
-  <ul class="booking-list">
-    <li>performance</li>
-    <li>select dates</li>
-    <li>artists name</li>
-  </ul>
+  <div class="booking-list">
+    <div class="intro-btn perf-btn">
+      <h4>performance</h4>
+      <i class="fa fa-arrow-down"></i>
+    </div>
+    <div class="intro-btn dates-btn">
+      <h4>select dates</h4>
+      <i class="fa fa-calendar"></i>
+    </div>
+    <div class="intro-btn artist-btn">
+      <h4>artists name</h4>
+      <i class="fa fa-star"></i>
+    </div>
+  </div>
+
 
   <script src="app.js"></script>
 </body>

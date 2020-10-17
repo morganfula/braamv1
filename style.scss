@@ -1,13 +1,76 @@
 $font-family: "lato", sans-serif;
 
+$blue: #4082c9;
+$black: #0f0f0f;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: #4082c9;
+  background: $blue;
 }
 
 body,
 html {
   font-family: $font-family;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 5vh;
+  align-items: center;
+  margin: auto;
+}
+
+.big-title {
+  font-size: 4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  li {
+    padding: 1rem;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+  h1 {
+    flex: 1;
+  }
+}
+
+.section1 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  h3 {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+  .underline {
+    width: 15.8rem;
+    background: $black;
+    height: 5px;
+  }
+}
+
+.intro-img {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  img {
+    height: 1000px;
+    width: 600px;
+    object-fit: cover;
+    border: 0.5rem solid $black;
+  }
 }
